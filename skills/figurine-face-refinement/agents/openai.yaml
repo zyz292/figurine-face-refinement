@@ -1,0 +1,4 @@
+interface:
+  display_name: "动漫手办面雕精修"
+  short_description: "按角色参考图修整手办脸面、眼周与睫毛浮雕，并用固定机位灰模检验。"
+  default_prompt: "用 $figurine-face-refinement 对照角色预览修整手办面雕，保留已认可的特征，并提供多角度灰模对照。"
