@@ -6,11 +6,11 @@ A Chinese-language Agent Skill for refining anime figurine faces in 3D. It helps
 
 ## Before and after
 
-Fixed-camera Blender clay renders of the Dafeiyu figurine. In v15, the outer upper lashes extend toward the temple while keeping their thick roots. [Read the case study in Chinese](skills/figurine-face-refinement/references/case-study.md).
+Fixed-camera Blender clay renders of the Dafeiyu figurine. From the original v0 mesh to the final v15 face, the raised eye details and uneven eye contours were smoothed, and the upper lashes were reshaped to extend toward the temple. [Read the case study in Chinese](skills/figurine-face-refinement/references/case-study.md).
 
-| v14 · Before | v15 · After |
+| v0 · Original mesh | v15 · Final face |
 | --- | --- |
-| ![v14: upper lash tips turn slightly inward](docs/images/eyelash-before-v14.png) | ![v15: outer upper lash tips extend toward the temple](docs/images/eyelash-after-v15.png) |
+| ![v0: raised eye details and uneven eye contours](docs/images/face-original-v0.png) | ![v15: outer upper lash tips extend toward the temple](docs/images/eyelash-after-v15.png) |
 
 ## Quick start
 

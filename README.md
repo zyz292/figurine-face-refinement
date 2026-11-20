@@ -6,11 +6,11 @@
 
 ## 效果对照
 
-大肥鱼面雕，Blender 同机位斜侧灰模。v15 将上睫毛外侧向太阳穴展开，并保留厚实的睫根。[查看面雕复盘](skills/figurine-face-refinement/references/case-study.md)
+大肥鱼面雕，Blender 同机位斜侧灰模。从 v0 原模到 v15 最终面部，修平了眼内凸纹和眼周凹陷，并重塑了向太阳穴展开的上睫毛。[查看面雕复盘](skills/figurine-face-refinement/references/case-study.md)
 
-| v14 · 修改前 | v15 · 修改后 |
+| v0 · 原模 | v15 · 最终面部 |
 | --- | --- |
-| ![v14：外侧上睫尖略内收](docs/images/eyelash-before-v14.png) | ![v15：外侧上睫尖向太阳穴展开](docs/images/eyelash-after-v15.png) |
+| ![v0：原模的眼内凸纹和眼周凹陷](docs/images/face-original-v0.png) | ![v15：外侧上睫尖向太阳穴展开](docs/images/eyelash-after-v15.png) |
 
 ## 快速开始
 
