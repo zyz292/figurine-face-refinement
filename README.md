@@ -2,6 +2,12 @@
 
 一套给 3D 建模 agent 使用的中文面雕工作流，附 Blender 多角度灰模检视工具。适合从 Hi3D 等工具生成的手办底模开始，处理鼻尖、眼周、素眼、睫毛浮雕和被刘海挡住的眼角。技能把角色还原、局部网格修整和同机位验收串起来。实际修模需要能读写三维模型的工具。
 
+## v1.1 更新
+
+新角色先复制[角色记录模板](skills/figurine-face-refinement/templates/face-record.json)，已有角色从[上次认可的模型和固定机位](skills/figurine-face-refinement/references/character-record.md)续修。眼内有多余的纹样或凸边时，可用[局部眼面修整工具](skills/figurine-face-refinement/references/eye-surface.md)按编辑、参照、保护三个顶点组处理。通过[局部对照图工具](skills/figurine-face-refinement/references/region-review.md)比较同机位的原模和候选版。工具要求先在当前角色上定位皮肤与周边健康曲面。
+
+新角色试用时，可记录首次定位用时、到认可版的总用时、总 token、作者纠正次数，以及已认可区域被误改的次数。沿用同一任务描述与验收质量，区分首次定位成本和后续单次修改成本。
+
 ## 使用
 
 1. 准备可编辑模型、角色参考和最近认可的版本。如果有成品面雕参考，说明想借鉴的是哪个局部特征。
@@ -54,7 +60,11 @@ test ! -e "$root/figurine-face-refinement" && cp -R skills/figurine-face-refinem
 ```sh
 python tests/check_project.py
 python tests/check_project.py --blender blender
+python tests/test_eye_surface.py --blender blender
+python tests/test_compare_region.py
 ```
+
+v1.1 新增的眼面拟合已用带凸纹和保护区的合成曲面实测，局部对照图已用贝丽尔原模与既有修整版验证。外部拼图与缓存测试使用 Pillow。跨新角色的质量、耗时和 token 开销待测。
 
 真实模型验证使用 Blender 5.2.1，在大肥鱼 v14 与 v15 上以相同取景生成了两组各五张灰模图。仓库内的可重复测试用 Blender 自带网格建立临时场景，检查输出尺寸、灰度、多角度差异以及源文件完整性。项目仅附文字案例和工具，使用者自行提供模型与角色参考图。
 

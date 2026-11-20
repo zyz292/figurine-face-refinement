@@ -24,6 +24,16 @@ class ProjectChecks(unittest.TestCase):
                 if "://" not in target:
                     self.assertTrue((doc.parent / target.split("#")[0]).is_file(), target)
 
+    def test_character_record_starts_without_model_specific_defaults(self):
+        record = json.loads((SKILL / "templates/face-record.json").read_text("utf-8"))
+        self.assertIsNone(record["accepted_model"])
+        self.assertIsNone(record["frame_file"])
+        self.assertEqual(record["eye_regions"], [])
+        self.assertEqual(record["geometry"], [])
+        self.assertEqual(record["texture"], [])
+        for script in ("eye_surface.py", "compare_region.py"):
+            self.assertTrue((SKILL / "scripts" / script).is_file())
+
     def test_blender_views(self):
         if not BLENDER:
             self.skipTest("pass --blender to render a temporary scene")

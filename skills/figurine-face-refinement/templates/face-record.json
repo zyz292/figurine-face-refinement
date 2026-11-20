@@ -1,0 +1,18 @@
+{
+  "record_version": "1.1",
+  "character": "",
+  "accepted_model": null,
+  "working_baseline": "",
+  "candidate_model": null,
+  "character_reference": "",
+  "technique_reference": null,
+  "frame_file": null,
+  "head_mesh": null,
+  "intentional_asymmetry": [],
+  "geometry": [],
+  "texture": [],
+  "preserve": [],
+  "eye_regions": [],
+  "current_change": "",
+  "remaining_visual_issue": null
+}
