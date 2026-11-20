@@ -70,6 +70,12 @@ The eye surface tool was tested on a synthetic mesh with raised details and a pr
 
 The repository includes the workflow, written examples, and tools. Supply your own models and character references. The project follows the [Agent Skills](https://github.com/agentskills/agentskills) directory format.
 
+## License and contributing
+
+The code and documentation in this repository are licensed under the [MIT License](LICENSE). User-supplied models, character references, and other third-party assets are subject to their own terms.
+
+See the [contribution guide](CONTRIBUTING.md#english) for bug reports and pull requests.
+
 ## Contributors
 
 - [@zyz292](https://github.com/zyz292) — Project creator and maintainer

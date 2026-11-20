@@ -72,6 +72,12 @@ v1.1 新增的眼面拟合已用带凸纹和保护区的合成曲面实测，局
 
 项目按 [Agent Skills](https://github.com/agentskills/agentskills) 目录规范组织。
 
+## 许可证与贡献
+
+仓库内的代码和文档采用 [MIT 许可证](LICENSE)。使用者自行提供的模型、角色参考图及其他第三方素材，以各自的授权为准。
+
+欢迎报告问题或提交改进，见[贡献指南](CONTRIBUTING.md#简体中文)。
+
 ## 贡献者
 
 - [@zyz292](https://github.com/zyz292) — 项目发起与维护
