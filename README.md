@@ -4,6 +4,22 @@
 
 一套给 3D 建模 agent 使用的中文面雕工作流，附 Blender 多角度灰模检视工具。适合从 Hi3D 等工具生成的手办底模开始，处理鼻尖、眼周、素眼、睫毛浮雕和被刘海挡住的眼角。技能把角色还原、局部网格修整和同机位验收串起来。实际修模需要能读写三维模型的工具。
 
+## 效果对照
+
+大肥鱼面雕，Blender 同机位斜侧灰模。v15 将上睫毛外侧向太阳穴展开，并保留厚实的睫根。[查看面雕复盘](skills/figurine-face-refinement/references/case-study.md)
+
+| v14 · 修改前 | v15 · 修改后 |
+| --- | --- |
+| ![v14：外侧上睫尖略内收](docs/images/eyelash-before-v14.png) | ![v15：外侧上睫尖向太阳穴展开](docs/images/eyelash-after-v15.png) |
+
+## 快速开始
+
+1. 准备可编辑的模型和角色参考图。
+2. [安装技能](README.md#安装到-codex)后，在 Codex 中调用 `$figurine-face-refinement`。
+3. 指定要改的部位、要保留的形态，并要求输出同机位修改前后对照。
+
+[查看 v1.1 发布说明](https://github.com/zyz292/figurine-face-refinement/releases/tag/v1.1)
+
 ## v1.1 更新
 
 新角色先复制[角色记录模板](skills/figurine-face-refinement/templates/face-record.json)，已有角色从[上次认可的模型和固定机位](skills/figurine-face-refinement/references/character-record.md)续修。眼内有多余的纹样或凸边时，可用[局部眼面修整工具](skills/figurine-face-refinement/references/eye-surface.md)按编辑、参照、保护三个顶点组处理。通过[局部对照图工具](skills/figurine-face-refinement/references/region-review.md)比较同机位的原模和候选版。工具要求先在当前角色上定位皮肤与周边健康曲面。

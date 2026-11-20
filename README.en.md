@@ -4,6 +4,24 @@
 
 A Chinese-language Agent Skill for refining anime figurine faces in 3D. It helps you choose a base mesh, match the character reference, edit specific facial features, and review changes in Blender from fixed viewpoints. It works with editable base meshes from tools such as Hi3D and covers nose tips, eyelids, smooth eye surfaces for painting or texturing, raised eyelashes, and eye corners hidden by bangs.
 
+## Before and after
+
+Fixed-camera Blender clay renders of the Dafeiyu figurine. In v15, the outer upper lashes extend toward the temple while keeping their thick roots. [Read the case study in Chinese](skills/figurine-face-refinement/references/case-study.md).
+
+| v14 · Before | v15 · After |
+| --- | --- |
+| ![v14: upper lash tips turn slightly inward](docs/images/eyelash-before-v14.png) | ![v15: outer upper lash tips extend toward the temple](docs/images/eyelash-after-v15.png) |
+
+## Quick start
+
+1. Prepare an editable model and character references.
+2. [Install the skill](README.en.md#install-in-codex), then invoke `$figurine-face-refinement` in Codex.
+3. Say what to change, what to preserve, and ask for before and after renders from the same camera.
+
+This README is available in English. The skill and its reference guides are primarily in Chinese.
+
+[Read the v1.1 release notes](https://github.com/zyz292/figurine-face-refinement/releases/tag/v1.1)
+
 ## What's new in v1.1
 
 - Start a new character with the [character record template](skills/figurine-face-refinement/templates/face-record.json). For an existing character, resume from the [last approved model and saved viewpoints](skills/figurine-face-refinement/references/character-record.md).
